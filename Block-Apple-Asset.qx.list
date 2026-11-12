@@ -1,0 +1,16 @@
+# 冻结证书信任资产 1013 — Quantumult X 远程分流列表
+# 只含 8 条拦截规则（资产目录 + 下载域名）。
+# 放行规则（激活、签名验证、OCSP/CRL、PPQ 等 17 条）放在本地 [filter_local] 里，
+# 本地规则先于远程规则生效，所以放行不会被远程拦截盖掉。
+#
+# 用法：在 QX 配置文件的 [filter_remote] 里加一行：
+#   https://raw.githubusercontent.com/xian9158/xian/main/Block-Apple-Asset.qx.list, tag=冻结证书信任资产, update-interval=86400, opt-parser=false, enabled=true
+# 不要对这个列表用 force-policy，列表里每行自带 reject。
+host-suffix,mesu.apple.com,reject
+host-suffix,gdmf.apple.com,reject
+host-suffix,gdmf-ados.apple.com,reject
+host-suffix,updates.cdn-apple.com,reject
+host-suffix,updates-http.cdn-apple.com,reject
+host-suffix,appldnld.apple.com,reject
+host-suffix,gg.apple.com,reject
+host-suffix,xp.apple.com,reject
