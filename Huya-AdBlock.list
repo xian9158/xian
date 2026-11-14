@@ -1,0 +1,10 @@
+# 虎牙直播 — 去广告过滤规则（QX）
+# 来源：fmz200/wool_scripts（社区维护）
+# 用法：加到 QX 配置的 [filter_remote]；开屏广告域名拦截，不用证书。
+host, pp-cdnfile2pcdn.msstatic.com, reject
+host, livewebbs2pcdn.msstatic.com, reject
+host, huyafile.msstatic.com, reject
+host, livewebbs2.msstatic.com, reject
+host, business.msstatic.com, reject
+host-suffix, v1d.szbdyd.com, reject
+host-suffix, 3dm.huya.com, reject
