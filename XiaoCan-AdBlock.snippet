@@ -1,11 +1,9 @@
-# 小蚕霸王餐 / 小蚕惠生活 — 去广告（Quantumult X 重写片段）
-# 来源：fmz200/wool_scripts（社区维护，感谢派大星、ZenMoFiShi、sliverkissm 分享）
-# 注意：社区原名是“小蚕霸王餐”，和小蚕惠生活是同一家公司（xiaocantech.com）的应用，
-# 共用广告接口，所以同样适用；如果个别广告还在，再抓包补充。
-# 用法：把下面 [rewrite_local] 和 [mitm] 的内容加入 QX 配置；
-# 需要开启 QX 的 MitM（证书已安装并信任）+ 重写开关，否则 URL 规则不生效。
+#!name=小蚕霸王餐去广告
+#!desc=拦截小蚕惠生活/霸王餐广告：开屏、横幅、红包推广、更新弹窗（来源：fmz200/wool_scripts）
+#!author=xian9158
+#!homepage=https://github.com/xian9158/xian
 
-[rewrite_local]
+# > 小蚕霸王餐 / 小蚕惠生活
 # 去广告
 ^https?:\/\/zlsdk\.1rtb\.net\/sdk\/req_ad url reject-dict
 # 红包推广
@@ -19,5 +17,4 @@
 # 广告 SDK 域名整段拦截（兜底）
 host-suffix, 1rtb.net, reject
 
-[mitm]
 hostname = zlsdk.1rtb.net, web2.realtech-inc.com, sdk.1rtb.net, gw.xiaocantech.com
