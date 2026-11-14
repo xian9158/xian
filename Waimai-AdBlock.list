@@ -1,0 +1,5 @@
+# 歪麦霸王餐 — 去开屏广告（QX 过滤规则）
+# 来源：fmz200/wool_scripts（社区维护）
+# 用法：加到 QX 配置的 [filter_remote]，不要加到重写里。
+host-suffix, ad.gameley.com, reject
+host-suffix, zlsdk.1rtb.net, reject
