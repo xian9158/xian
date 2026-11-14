@@ -1,0 +1,14 @@
+#!name=虎牙直播去广告
+#!desc=拦截虎牙直播开屏广告与直播间入口广告（来源：fmz200/wool_scripts）
+#!author=xian9158
+#!homepage=https://github.com/xian9158/xian
+
+# > 虎牙直播
+# 开屏广告
+^https?:\/\/cdn\.wup\.huya\.com\/launch\/queryHttpDns$ url reject
+^https?:\/\/business\.msstatic\.com\/advertiser\/material url reject
+^https?:\/\/cdnfile1\.msstatic\.com\/cdnfile\/appad\/ url reject-img
+# 直播间入口广告
+^https?://live-ads\.huya\.com/live/getAllEntrance.*$ url reject-dict
+
+hostname = cdn.wup.huya.com, business.msstatic.com, cdnfile1.msstatic.com, live-ads.huya.com
