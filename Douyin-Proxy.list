@@ -1,0 +1,21 @@
+# 抖音走代理 — QX 过滤规则
+# 来源：blackmatrix7/ios_rule_script DouYin.list（社区维护），策略改成 proxy
+# 用法：加到 QX 配置的 [filter_remote]（分流里），不要加到重写里。
+# 作用：抖音的域名全部走代理，IP 属地就跟着节点走；不用代理时把这条订阅关掉就行。
+host, lf3-static.bytednsdoc.com, proxy
+host, v5-dy-o-abtest.zjcdn.com, proxy
+host-suffix, amemv.com, proxy
+host-suffix, douyin.com, proxy
+host-suffix, douyincdn.com, proxy
+host-suffix, douyinpic.com, proxy
+host-suffix, douyinstatic.com, proxy
+host-suffix, douyinvod.com, proxy
+host-suffix, idouyinvod.com, proxy
+host-suffix, iesdouyin.com, proxy
+host-suffix, ixigua.com, proxy
+host-suffix, ixiguavideo.com, proxy
+host-suffix, pstatp.com, proxy
+host-suffix, snssdk.com, proxy
+host-suffix, toutiao.com, proxy
+host-suffix, zijieapi.com, proxy
+host-suffix, zjcdn.com, proxy
