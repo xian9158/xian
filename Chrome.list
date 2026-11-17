@@ -1,0 +1,25 @@
+# NAME: Google Chrome (Full - App & Services)
+# DESC: Google Chrome 浏览器内置服务、同步及搜索完整分流规则
+
+# > Chrome 专属更新、组件与安全浏览（Safe Browsing）
+host-suffix, chrome.com, ChromeProxy
+host-suffix, chromium.org, ChromeProxy
+host-suffix, gvt1.com, ChromeProxy
+host-suffix, gvt2.com, ChromeProxy
+host-suffix, gvt3.com, ChromeProxy
+host-keyword, safebrowsing, ChromeProxy
+
+# > Google 核心搜索与账号同步（书签、密码、历史记录同步必需）
+host-suffix, google.com, ChromeProxy
+host-suffix, googleapis.com, ChromeProxy
+host-suffix, gstatic.com, ChromeProxy
+host-suffix, googleusercontent.com, ChromeProxy
+host-suffix, ggpht.com, ChromeProxy
+host-suffix, accounts.google.com, ChromeProxy
+host-suffix, clients2.google.com, ChromeProxy
+host-suffix, clients4.google.com, ChromeProxy
+
+# > Chrome 内置网页翻译与语音搜索接口
+host-suffix, translate.googleapis.com, ChromeProxy
+host-suffix, translate.google.com, ChromeProxy
+host-keyword, google, ChromeProxy
