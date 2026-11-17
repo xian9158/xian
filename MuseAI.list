@@ -1,17 +1,20 @@
-# NAME: Muse AI
-# DESC: Meta Muse AI 专属分流规则（含核心业务、静态资源及账号认证接口）
-# UPDATED: 2026-11-17
+# NAME: Muse AI (Full - Web & App)
+# DESC: Meta Muse AI 网页与 App 端完整分流规则
 
-# > Muse AI 核心与子域名
+# > 核心业务域名
 host-suffix, muse.ai, MuseAI
 host-keyword, museai, MuseAI
 
-# > 依赖的 Meta 认证与基础服务（防地区风控与登录异常）
+# > Meta 账号登录与验证（App 端 OAuth 授权必需）
 host-suffix, meta.com, MuseAI
-host-suffix, fbcdn.net, MuseAI
 host-suffix, facebook.com, MuseAI
+host-suffix, fbcdn.net, MuseAI
 host-suffix, fbsbx.com, MuseAI
 host-suffix, accountkit.com, MuseAI
-
-# > 常见底层云存储与推送接口（视实际使用环境补充）
 host-suffix, metai.com, MuseAI
+
+# > 移动端 API、遥测与风控检测接口
+host-suffix, graph.facebook.com, MuseAI
+host-suffix, edge-mqtt.facebook.com, MuseAI
+host-suffix, star.c10r.facebook.com, MuseAI
+host-keyword, meta-ai, MuseAI
