@@ -4,7 +4,7 @@
 # 本地规则先于远程规则生效，所以放行不会被远程拦截盖掉。
 #
 # 用法：在 QX 配置文件的 [filter_remote] 里加一行：
-#   https://raw.githubusercontent.com/xian9158/xian/main/Block-Apple-Asset.qx.list, tag=冻结证书信任资产, update-interval=86400, opt-parser=false, enabled=true
+#   https://gh-proxy.com/https://raw.githubusercontent.com/xian9158/xian/main/Block-Apple-Asset.qx.list, tag=冻结证书信任资产, update-interval=86400, opt-parser=false, enabled=true
 # 不要对这个列表用 force-policy，列表里每行自带 reject。
 host-suffix,mesu.apple.com,reject
 host-suffix,gdmf.apple.com,reject
